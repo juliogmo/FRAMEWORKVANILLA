@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Escitala</title>
+    <script src="./codigo.js"></script>
+</head>
+
+<body>
+    <center>
+        <div style='box-shadow: 0px 0px 20px 8px rgba(6, 64, 255, 0.22); padding: 20px; width: 500px; display:inline-block; margin: 30px;'>
+
+            <h1>CIFRADO ESCITALA</h1>
+            <label for="mensaje">MENSAJE A CIFRAR: </label><br>
+            <input type="text" name="mensaje" id="textoOriginal" rows="3" oninput="cifrarmensaje()"><br><br>
+            <label for="columnas">Columnas de la matriz </label>
+            <select aria-label="Default select example" id="desplazamiento">
+                                    <option selected value="3">3</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                  </select>
+
+            <h3>Mensaje cifrado</h5>
+
+                <h2 id="textoCifrado"></h2><br>
+                <label for="columnas">Decifrar Mensaje: </label>
+                <button class="btn btn-danger" onclick="descifrarmensaje()"> Descifrar</button>
+                <h5 class="card-title">Mensaje descifrado</h5>
+
+                <h2 id="textoDescifrado"></h2>
+
+
+        </div>
+    </center>
+
+
+
+</body>
+
+</html>
